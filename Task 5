@@ -1,0 +1,8 @@
+def guestList(s):
+  names = s.upper().split(';')
+  guests = [(name.split(':')[0], name.split(':')[1]) for name in names]
+  guests = sorted(guests, key=lambda x: (x[1], x[0]))
+  guestStrings = [f"({guest[1]}, {guest[0]})" for guest in guests]
+  output = ''.join(guest_strings)
+
+  return output
