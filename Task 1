@@ -1,0 +1,2 @@
+def filter_integers(arr):
+    return [x for x in arr if isinstance(x, int)]
