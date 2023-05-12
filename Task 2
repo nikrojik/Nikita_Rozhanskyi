@@ -1,0 +1,8 @@
+def first_non_repeating_letter(s):
+  dict = {}
+  for c in s.lower():
+    dict[c] = dict.get(c, 0) + 1
+  for c in s:
+    if dict[c.lower()] == 1:
+      return c
+  return 0
