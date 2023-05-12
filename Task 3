@@ -1,0 +1,5 @@
+def DigitalRoot(n):
+  if n <= 9:
+    return n
+  else:
+    return DigitalRoot(sum(int(d) for d in str(n)))
