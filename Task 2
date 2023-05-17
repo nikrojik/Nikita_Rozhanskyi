@@ -6,3 +6,12 @@ def firstNonRepeatingLetter(s):
     if dict[c.lower()] == 1:
       return c
   return 0
+
+def main():
+    print('Enter string:')
+    string: str = input()
+    x = firstNonRepeatingLetter(string)
+    print(x)
+
+if __name__ == '__main__':
+    main()
