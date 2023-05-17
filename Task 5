@@ -3,6 +3,15 @@ def guestList(s):
   guests = [(name.split(':')[0], name.split(':')[1]) for name in names]
   guests = sorted(guests, key=lambda x: (x[1], x[0]))
   guestStrings = [f"({guest[1]}, {guest[0]})" for guest in guests]
-  output = ''.join(guest_strings)
+  output = ''.join(guestStrings)
 
   return output
+
+def main():
+    lst = []
+    lst1 = []
+    s = "Fired:Corwill;Wilfred:Corwill;Barney:TornBull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+    print(guestList(s))
+
+if __name__ == '__main__':
+    main()
