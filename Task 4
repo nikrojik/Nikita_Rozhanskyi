@@ -9,3 +9,11 @@ def countPairs(arr, target):
     seen.add(num)
 
   return count
+
+def main():
+    lst = [1, 3, 6, 2, 2, 0, 4, 5]
+    target = 5
+    print(countPairs(lst, target))
+
+if __name__ == '__main__':
+    main()
