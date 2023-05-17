@@ -3,3 +3,11 @@ def digitalRoot(n):
     return n
   else:
     return digitalRoot(sum(int(d) for d in str(n)))
+
+def main():
+   print("Enter digital number: ")
+   i = int(input())
+   print(digitalRoot(i))
+
+if __name__ == '__main__':
+    main()
