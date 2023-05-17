@@ -1,2 +1,12 @@
 def filterIntegers(arr):
     return [x for x in arr if isinstance(x, int)]
+
+
+def main():
+    flst = [1, 2, 'a', 'aas14', 7]
+    arr = filterIntegers(flst)
+    print(arr)
+
+
+if __name__ == '__main__':
+    main()
